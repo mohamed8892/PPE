@@ -1,0 +1,30 @@
+<!DOCTYPE>
+<html>
+	<head> 
+		<title> Page HTML STOCKS </title>
+	</head>
+	
+	<body>
+		<p> Gestion des STOCKS </p>
+		
+		<!-- Creation d'un formulaire -->
+		<form method ="POST" action ="RequeteSQL.php">
+		<p>
+			<!-- Zones de saisie -->
+			Saisissez votre Genre: <input type = "text" name = "Genre"  /><br> <br>
+			Saisissez votre TypeDeVetement: <input type = "text" name = "TypeDeVetement"  /> <br> <br>
+			Saisissez la Taille: <input type = "text" name = "Taille"  /> <br> <br>
+            Saisissez la Couleur: <input type = "text" name = "Couleur"  /> <br> <br>
+            Saisissez la PrixUnitaire: <input type = "text" name = "PrixUnitaire"  /> <br> <br>
+            Saisissez la QuantiteDispo: <input type = "text" name = "QuantiteDispo"  /> <br> <br>
+			
+			Maj: <input type = "radio" name = "req" value = "maj"/>
+			Insert: <input type = "radio" name = "req" value = "ins"/>
+			Delete: <input type = "radio" name = "req" value = "del"/>
+			Select: <input type = "radio" name = "req" value = "sel"/> <br> <br>
+			
+			<input type = "submit" name = "valid" value = "Valider requete"/>
+			<br>
+		</form>
+	</body>
+</html>

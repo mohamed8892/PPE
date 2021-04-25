@@ -1,0 +1,64 @@
+<!DOCTYPE>
+<html>
+	<head> 
+		<title> Vitrine </title>
+    </head>
+    <body>
+
+        <H1><center>Ma vitrine</center></H1>
+    
+        <form method="POST" action="vitrine.php">
+
+        <div align = "left">   
+        <label for="Genre">Genre</label>
+        <select name="Genre" id="genre">
+        <option value="Homme" >  Homme</option>
+        <option value="Femme" >  Femme</option>       
+        </select> 
+        </div>  
+
+        <div align = "left">  
+        <label for="TypeVetement">TypeVetement</label>
+        <select name="TypeVetement" id="TypeVetement">
+        <option value="Pantalon" > Pantalon </option>
+        <option value="Robe" >  Robe</option>
+        <option value="Veste" >  Veste</option>     
+        <option value="Chemise" >  Chemise</option>               
+        </select>       
+        </div>
+
+        <div align = "left">  
+        <label for="Taille">Taille</label>
+        <select name="Taille" id="Taille">
+        <option value="Adulte" > Adulte </option>
+        <option value="7-12ans" >  7-12 ans</option>
+        <option value="13-18ans" >  13-18 ans</option>     
+        <option value="1-6ans" >  1-6 ans</option>               
+        </select>    
+        </div>
+
+        <div align = "left">  
+        <label for="Couleur">Couleur</label>
+        <select name="Couleur" id="Couleur">
+        <option value="Beige" > Beige </option>
+        <option value="Bleu" >  Bleu</option>
+        <option value="Noir" >  Noir</option>     
+        <option value="Rouge" >  Rouge</option>
+        <option value="Vert" >  Vert</option>                  
+        </select>    
+        </div>
+
+        <label for="Quantite">Quantite</label>         
+        <input type="text" id="Quantite" name="Quantite"><br>
+        
+
+        <input type="radio" name="BtonConsultationAchat" value="consultation" id="consultation" checked="checked" /> <label for="consultation">Consultation</label>
+        <input type="radio" name="BtonConsultationAchat" value="achat" id="achat" /> <label for="achat">Achat</label><br>
+
+        <input type="submit" name="Submit" value="Submit">
+
+        </form>
+    
+
+    </body>
+</html>
