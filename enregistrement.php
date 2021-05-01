@@ -25,8 +25,8 @@ if (isset($_POST['valid']))
                         on execute la requete qui est stocké dans la variable $req */
                         $req->execute (array($_POST["Nom"],$_POST["Prenom"],$_POST["Email"],$_POST["password"]));
                         echo"<center> <h1>Site Vitrine</h1> </center>";
-                        echo "<br><center>Vous êtes inscrit </center>";
-                        echo"<br> <a href='connexion.html'> se connecter </a>";
+                        echo "<h1><br><center>Vous êtes maintenant inscrit ! </center></h2>";
+                        echo"<h2><br> <a href='connexion.php'> Se connecter </a></h2>";
                     }   
                         //on attrape l'erreur qu'on stock dans la variable $e
                     catch(PDOException $e){ 
